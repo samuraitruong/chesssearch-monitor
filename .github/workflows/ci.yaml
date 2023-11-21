@@ -3,6 +3,10 @@ name: https://chesssearch.vercel.app Monitoring
 on:
   schedule:
     - cron: "*/15 * * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   monitor:
