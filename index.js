@@ -11,7 +11,7 @@ const { chromium } = require("playwright");
 
   await page.waitForSelector("[data-testid='game-hit-card']");
 
-  await page.screenshot({ path: "screenshot.png" });
+  await page.screenshot({ path: "./data/screenshot.png" });
 
   await browser.close();
 
