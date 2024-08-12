@@ -7,7 +7,8 @@ on:
   push:
     branches:
       - main
-
+permissions:
+  contents: write
 jobs:
   monitor:
     runs-on: ubuntu-latest
